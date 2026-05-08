@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mars, The Red Planet</title>
+<meta name="description" content="Learn about Mars, the Red Planet." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link" aria-label="Big Planetarium home">
+      <img src="logo.png" alt="Big Planetarium logo" class="logo" />
+    </a>
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planet-mars.html" aria-current="page">Mars</a></li>
+        <li><a href="index.html#planets">All Planets</a></li>
+        <li><a href="index.html#visit">Visit Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container section">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href="index.html">Home</a> &rsaquo; <span aria-current="page">Mars</span>
+  </nav>
+
+  <h1>Mars, The Red Planet</h1>
+  <p class="lead">Mars gets its red colour from rusty iron-rich dust that covers its surface.</p>
+
+  <figure>
+    <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/mars/resources/detail_files/7/7668_Mars-viking-2-orbiter-global-view-partial-valles-marinares-PIA04304-full2.jpg?w=1600&h=1517&fit=clip&crop=faces%2Cfocalpoint" alt="A photograph of Mars showing its reddish-orange surface and polar ice cap." loading="lazy" />
+    <figcaption>Mars photographed by NASA's Viking 1 orbiter.</figcaption>
+  </figure>
+
+  <h2>Quick Facts</h2>
+  <ul class="facts">
+    <li><strong>Diameter:</strong> 6,779 km</li>
+    <li><strong>Moons:</strong> 2 (Phobos and Deimos)</li>
+    <li><strong>Day length:</strong> About 24.6 Earth-hours</li>
+    <li><strong>Year length:</strong> About 687 Earth-days</li>
+  </ul>
+
+  <h2>Olympus Mons</h2>
+  <p>Mars is home to the largest volcano in the Solar System, Olympus Mons, which stands about 22 km tall — nearly three times the height of Mount Everest.</p>
+
+  <h2>How big is Mars compared to Earth?</h2>
+  <p>Earth is shown at full size. Use the slider to grow Mars and see how much smaller it is.</p>
+  <div class="size-demo">
+    <label for="scale-mars">Scale Mars: <span class="scale-value">1×</span></label>
+    <input type="range" id="scale-mars" data-target="mars-size" min="1" max="1.9" step="0.1" value="1" aria-describedby="scale-help-mars" />
+    <p id="scale-help-mars" class="sr-only">Drag to scale Mars up to the size of Earth.</p>
+    <div class="size-stage">
+      <div class="planet mars-size" id="mars-size" aria-label="Mars"></div>
+      <div class="planet earth-ref" aria-label="Earth"></div>
+    </div>
+  </div>
+
+  <p><a href="index.html" class="btn">← Back to all planets</a></p>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2026 Big Planetarium, Bristol. Prototype site for educational use.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

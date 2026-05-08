@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mercury, The Swift Planet</title>
+<meta name="description" content="Learn about Mercury, the smallest and closest planet to the Sun." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link" aria-label="Big Planetarium home">
+      <img src="logo.png" alt="Big Planetarium logo" class="logo" />
+    </a>
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planet-mercury.html" aria-current="page">Mercury</a></li>
+        <li><a href="index.html#planets">All Planets</a></li>
+        <li><a href="index.html#visit">Visit Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container section">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href="index.html">Home</a> &rsaquo; <span aria-current="page">Mercury</span>
+  </nav>
+
+  <h1>Mercury, The Swift Planet</h1>
+  <p class="lead">Mercury is the smallest planet in our Solar System and the closest to the Sun.</p>
+
+  <figure>
+    <img src="https://cdn.mos.cms.futurecdn.net/GA4grWEsUYUqH58cDbRBw8.jpg" alt="A photograph of Mercury showing its grey, heavily cratered surface." loading="lazy" />
+    <figcaption>Mercury photographed by NASA's MESSENGER spacecraft.</figcaption>
+  </figure>
+
+  <h2>Quick Facts</h2>
+  <ul class="facts">
+    <li><strong>Diameter:</strong> 4,879 km</li>
+    <li><strong>Moons:</strong> 0</li>
+    <li><strong>Day length:</strong> About 59 Earth-days</li>
+    <li><strong>Year length:</strong> About 88 Earth-days</li>
+  </ul>
+
+  <h2>A World of Extremes</h2>
+  <p>Mercury has almost no atmosphere, so its temperature swings from about 430°C in the day to -180°C at night.</p>
+
+  <h2>How big is Mercury compared to Earth?</h2>
+  <p>Earth is shown at full size. Use the slider to grow Mercury and see how much smaller it really is.</p>
+  <div class="size-demo">
+    <label for="scale-mercury">Scale Mercury: <span class="scale-value">1×</span></label>
+    <input type="range" id="scale-mercury" data-target="mercury-size" min="1" max="2.6" step="0.1" value="1" aria-describedby="scale-help-m" />
+    <p id="scale-help-m" class="sr-only">Drag to scale Mercury up to the size of Earth.</p>
+    <div class="size-stage">
+      <div class="planet mercury-size" id="mercury-size" aria-label="Mercury"></div>
+      <div class="planet earth-ref" aria-label="Earth"></div>
+    </div>
+  </div>
+
+  <p><a href="index.html" class="btn">← Back to all planets</a></p>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2026 Big Planetarium, Bristol. Prototype site for educational use.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

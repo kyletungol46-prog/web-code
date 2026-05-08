@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Venus, Earth's Twin</title>
+<meta name="description" content="Learn about Venus, Earth's hot and cloudy neighbour." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link" aria-label="Big Planetarium home">
+      <img src="logo.png" alt="Big Planetarium logo" class="logo" />
+    </a>
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planet-venus.html" aria-current="page">Venus</a></li>
+        <li><a href="index.html#planets">All Planets</a></li>
+        <li><a href="index.html#visit">Visit Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container section">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href="index.html">Home</a> &rsaquo; <span aria-current="page">Venus</span>
+  </nav>
+
+  <h1>Venus, Earth's Twin</h1>
+  <p class="lead">Venus is similar in size to Earth, but it is the hottest planet in our Solar System.</p>
+
+  <figure>
+    <img src="https://www.nasa.gov/wp-content/uploads/2023/03/724700main_venus_full_full.jpg" alt="A photograph of Venus showing its thick, pale yellow cloud cover." loading="lazy" />
+    <figcaption>Venus photographed by NASA's Mariner 10 spacecraft.</figcaption>
+  </figure>
+
+  <h2>Quick Facts</h2>
+  <ul class="facts">
+    <li><strong>Diameter:</strong> 12,104 km</li>
+    <li><strong>Moons:</strong> 0</li>
+    <li><strong>Day length:</strong> About 243 Earth-days</li>
+    <li><strong>Year length:</strong> About 225 Earth-days</li>
+  </ul>
+
+  <h2>A Runaway Greenhouse</h2>
+  <p>Venus is wrapped in thick clouds of carbon dioxide and sulfuric acid. These trap heat, pushing surface temperatures to around 465°C — hot enough to melt lead.</p>
+
+  <h2>How big is Venus compared to Earth?</h2>
+  <p>Venus is almost the same size as Earth. Use the slider to scale Venus up and see the small difference.</p>
+  <div class="size-demo">
+    <label for="scale-venus">Scale Venus: <span class="scale-value">1×</span></label>
+    <input type="range" id="scale-venus" data-target="venus-size" min="1" max="1.05" step="0.005" value="1" aria-describedby="scale-help-v" />
+    <p id="scale-help-v" class="sr-only">Drag to scale Venus up to the size of Earth.</p>
+    <div class="size-stage">
+      <div class="planet venus-size" id="venus-size" aria-label="Venus"></div>
+      <div class="planet earth-ref" aria-label="Earth"></div>
+    </div>
+  </div>
+
+  <p><a href="index.html" class="btn">← Back to all planets</a></p>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2026 Big Planetarium, Bristol. Prototype site for educational use.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Earth, Our Home Planet</title>
+<meta name="description" content="Learn about Earth, our home planet." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link" aria-label="Big Planetarium home">
+      <img src="logo.png" alt="Big Planetarium logo" class="logo" />
+    </a>
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planet-earth.html" aria-current="page">Earth</a></li>
+        <li><a href="index.html#planets">All Planets</a></li>
+        <li><a href="index.html#visit">Visit Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container section">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href="index.html">Home</a> &rsaquo; <span aria-current="page">Earth</span>
+  </nav>
+
+  <h1>Earth, Our Home Planet</h1>
+  <p class="lead">Earth is the only planet we know of that supports life, with liquid water oceans and a protective atmosphere.</p>
+
+  <figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/The_Blue_Marble%2C_AS17-148-22727.jpg/960px-The_Blue_Marble%2C_AS17-148-22727.jpg" alt="The famous Blue Marble photograph of Earth, showing blue oceans, white clouds and the African continent." loading="lazy" />
+    <figcaption>Earth photographed by the Apollo 17 crew in 1972.</figcaption>
+  </figure>
+
+  <h2>Quick Facts</h2>
+  <ul class="facts">
+    <li><strong>Diameter:</strong> 12,742 km</li>
+    <li><strong>Moons:</strong> 1 (the Moon)</li>
+    <li><strong>Day length:</strong> 24 hours</li>
+    <li><strong>Year length:</strong> 365.25 days</li>
+  </ul>
+
+  <h2>A Living World</h2>
+  <p>About 71% of Earth's surface is covered by water. Its atmosphere of nitrogen and oxygen, along with a magnetic field, shields life from harmful solar radiation.</p>
+
+  <p><a href="index.html" class="btn">← Back to all planets</a></p>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2026 Big Planetarium, Bristol. Prototype site for educational use.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

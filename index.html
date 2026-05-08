@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Big Planetarium — Explore the Milky Way</title>
+<meta name="description" content="Bristol-based planetarium exploring the planets of the Milky Way. Fun, accessible space education for everyone." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link" aria-label="Big Planetarium home">
+      <img src="logo.png" alt="Big Planetarium logo" class="logo" />
+    </a>
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="planet-earth.html">Earth</a></li>
+        <li><a href="#planets">All Planets</a></li>
+        <li><a href="#visit">Visit Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <h1 id="hero-title">Welcome to the Milky Way</h1>
+      <p class="lead">
+        Our home galaxy is a swirling collection of more than 100 billion stars, dust, gas, and at least eight planets we call neighbours. Let's explore it together!
+      </p>
+      <a href="#planets" class="btn">Meet the planets</a>
+    </div>
+  </section>
+
+  <section class="container section" aria-labelledby="about-title">
+    <h2 id="about-title">About the Milky Way</h2>
+    <p>
+      The Milky Way is a barred spiral galaxy about 100,000 light-years across. Our Solar System sits roughly two-thirds of the way out from the centre, on a quiet spiral arm called the Orion Arm. Everything you can see in the night sky with the naked eye lives inside this galaxy.
+    </p>
+    <figure>
+      <img src="https://i.natgeofe.com/k/a2a738a9-e019-4911-98e6-17f31c45ac88/milky-way-2_3x2.jpg" alt="A telescope shoots a laser into a sky filled with the bright band of the Milky Way." loading="lazy" />
+      <figcaption>The Milky Way seen from the European Southern Observatory.</figcaption>
+    </figure>
+  </section>
+
+  <section id="planets" class="container section" aria-labelledby="planets-title">
+    <h2 id="planets-title">The Eight Planets</h2>
+    <p>Click any planet to learn more.</p>
+    <ul class="planet-grid" role="list">
+      <li class="planet-card highlight"><span class="dot mercury" aria-hidden="true"></span><a href="planet-mercury.html"><h3>Mercury →</h3></a><p>The smallest planet, closest to the Sun.</p></li>
+      <li class="planet-card highlight"><span class="dot venus" aria-hidden="true"></span><a href="planet-venus.html"><h3>Venus →</h3></a><p>The hottest planet, wrapped in thick clouds.</p></li>
+      <li class="planet-card highlight"><span class="dot earth" aria-hidden="true"></span><a href="planet-earth.html"><h3>Earth →</h3></a><p>Our home, the only known world with life.</p></li>
+      <li class="planet-card highlight"><span class="dot mars" aria-hidden="true"></span><a href="planet-mars.html"><h3>Mars →</h3></a><p>The red planet, home to the tallest volcano.</p></li>
+      <li class="planet-card highlight"><span class="dot jupiter" aria-hidden="true"></span><h3><a href="planet-jupiter.html">Jupiter →</a></h3><p>The giant of the Solar System.</p></li>
+      <li class="planet-card"><span class="dot saturn" aria-hidden="true"></span><h3>Saturn</h3><p>Famous for its stunning rings.</p></li>
+      <li class="planet-card"><span class="dot uranus" aria-hidden="true"></span><h3>Uranus</h3><p>An ice giant tipped on its side.</p></li>
+      <li class="planet-card"><span class="dot neptune" aria-hidden="true"></span><h3>Neptune</h3><p>Windy, blue, and very far away.</p></li>
+    </ul>
+  </section>
+
+  <section id="visit" class="container section" aria-labelledby="visit-title">
+    <h2 id="visit-title">Visit Us</h2>
+    <p>Big Planetarium is based in Bristol, UK. Drop in for a show, a school workshop, or a cup of tea under the stars.</p>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2026 Big Planetarium, Bristol. Prototype site for educational use.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
